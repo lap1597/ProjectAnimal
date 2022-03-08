@@ -58,7 +58,7 @@ public int compareTo(IAnimal o) {
 }
 @Override
 public String toString() {
-	return "\nType Animal:"+getAnimalType+"\nID: "+getIdTag()+"\nMin Temp: "+getMinTemperature()+"\nMax Temp: "+getMaxTemperature();
+	return "\nType Animal:"+getAnimalType()+"\nID: "+getIdTag()+"\nMin Temp: "+getMinTemperature()+"\nMax Temp: "+getMaxTemperature();
 	
 }
 }
