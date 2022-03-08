@@ -4,7 +4,7 @@ public class Lion implements IAnimal, Comparable<IAnimal>  {
     private int minTemperature;
     private int maxTemperature;
 	Lion(int idTag,int minTemperature, int maxTemperature){
- 		AnimalType=this.getClass().getName();
+ 		
  		this.idTag=idTag;
  		this.minTemperature=minTemperature;
  		this.maxTemperature=maxTemperature;
@@ -13,7 +13,7 @@ public class Lion implements IAnimal, Comparable<IAnimal>  {
 	@Override
 	public String getAnimalType() {
 		// TODO Auto-generated method stub
-		return AnimalType;
+		return AnimalType=this.getClass().getName();
 	}
 	@Override
 	public int getIdTag() {
@@ -43,7 +43,7 @@ public class Lion implements IAnimal, Comparable<IAnimal>  {
 	}
 	@Override
 	public String toString() {
-		return "\nType Animal:"+AnimalType+"\nID: "+getIdTag()+"\nMin Temp: "+getMinTemperature()+"\nMax Temp: "+getMaxTemperature();
+		return "\nType Animal:"+getAnimalType()+"\nID: "+getIdTag()+"\nMin Temp: "+getMinTemperature()+"\nMax Temp: "+getMaxTemperature();
 		
 	}
 
