@@ -1,14 +1,9 @@
 public class Pig implements IAnimal, Comparable<IAnimal>{
     private int idTag;
-    private String AnimalType;
-    private int minTemperature;
-    private int maxTemperature;
-     Pig(int idTag,int minTemperature, int maxTemperature){
+    private String AnimalType=this.getClass().getName();
+
+     Pig(){
     		
-     		this.idTag=idTag;
-     		this.minTemperature=minTemperature;
-     		this.maxTemperature=maxTemperature;
- 		
 
      }
 
@@ -18,7 +13,7 @@ public class Pig implements IAnimal, Comparable<IAnimal>{
   public String getAnimalType(){
 	  
   
-      return AnimalType=this.getClass().getName();
+      return AnimalType;
 
   }   
   @Override
@@ -34,14 +29,14 @@ public class Pig implements IAnimal, Comparable<IAnimal>{
   }
   @Override
   public int getMinTemperature(){
-	  return minTemperature;
+	  return 30;
 
 
 
   }
   @Override
   public int getMaxTemperature(){
-	  return maxTemperature;
+	  return 50;
 
   }
 
