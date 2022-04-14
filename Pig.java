@@ -2,13 +2,6 @@ public class Pig implements IAnimal, Comparable<IAnimal>{
     private int idTag;
     private String AnimalType=this.getClass().getName();
 
-     Pig(){
-    		
-
-     }
-
-
-
   @Override
   public String getAnimalType(){
 	  
